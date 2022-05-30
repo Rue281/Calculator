@@ -1,5 +1,9 @@
 
 let screen = document.querySelector(".screen");
+let textFontSize = screen.style.fontSize = "xx-large";
+let textFontColor = screen.style.color="white";
+let textFontFamily = screen.style.fontWeight="bold";
+
 
 //temporary array
 let tempArr = [];
@@ -132,3 +136,12 @@ equalBtn.addEventListener("click",function(event){
     dataArr = [];
     tempArr = [];
 });
+
+//clear button
+let clearbtn = document.querySelector(".clear");
+clearbtn.addEventListener("click",function(){
+    //clear final array,tempArr,screen
+    dataArr = [];
+    tempArr = [];
+    screen.innerText = "";
+})
